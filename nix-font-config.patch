@@ -1,0 +1,18 @@
+--- gnat-gpl-2017-x86_64-linux-bin-upstream/etc/fonts/fonts.conf	2017-12-01 09:40:10.474778268 +0700
++++ gnat-gpl-2017-x86_64-linux-bin/etc/fonts/fonts.conf	2017-12-01 11:38:17.169457450 +0700
+@@ -23,7 +23,7 @@
+ 
+ <!-- Font directory list -->
+ 
+-	<dir>/usr/share/fonts</dir>
++	<dir>/run/current-system/sw/share/X11-fonts</dir>
+ 	
+ 	<dir prefix="xdg">fonts</dir>
+ 	<!-- the following element will be removed in the future -->
+@@ -170,4 +170,4 @@
+                 </prefer>
+         </alias>
+ 
+-</fontconfig>
+\ No newline at end of file
++</fontconfig>
