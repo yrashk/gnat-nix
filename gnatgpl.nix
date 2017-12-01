@@ -47,7 +47,7 @@ stdenv.mkDerivation {
           fi
         done
         makeWrapper $out/share/gnat/bin/gps $out/bin/gps --prefix PATH : $out/share/gnat/bin --set GNAT_ROOT $out --set GCC_ROOT $out --set GPS_ROOT $out --prefix LD_LIBRARY_PATH : $out/lib/gps/:${ncurses5}/lib:${xorg.libXinerama}/lib:${xorg.libXrender}/lib:${xorg.libSM}/lib:${xorg.libICE}/lib:${xorg.libX11}/lib:${xorg.libXext}/lib:${bzip2.out}/lib
-        for path in etc share lib libexec lib64; do
+        for path in etc share lib libexec lib64 include; do
            ln -s $out/$path $out/share/gnat/$path
         done
       ''; 
